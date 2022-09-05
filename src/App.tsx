@@ -21,11 +21,9 @@ function App() {
   return (
     <div>
       <Grid>
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
+        {Array.from({length: 5}).map((_, index) => (
+          <Box key={index} />
+        ))}
       </Grid>
     </div>
   );
